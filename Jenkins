@@ -1,10 +1,5 @@
 pipeline{
-agent {
-docker{
-image 'maven:3-alphine'
-args '-v /root/.me:/root/'
-}
-}
+agent any 
 
 stages{
 stage('Build'){
