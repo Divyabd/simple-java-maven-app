@@ -1,15 +1,13 @@
 pipeline{
      agent {
-    docker {
-        image 'maven:3-alpine'
-        label 'my-defined-label'
-        args  '-v /tmp:/tmp'
-    }
+    docker  'maven:3-alpine'
+       
+    
 }
           stages{
                 stage('Build'){
                              steps{
-                                    echo 'hii'
+                                   sh 'mvn -B clean verify'
                                   }
   
                              }
