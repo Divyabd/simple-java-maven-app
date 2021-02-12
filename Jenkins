@@ -3,13 +3,13 @@ pipeline{
           stages{
                 stage('Build'){
                              steps{
-                                   sh 'mvn -B clean verify'
+                                   sh './mvn -B clean verify'
                                   }
   
                              }
           stage('Test') {
                      steps{
-                          sh 'mvn package'
+                          sh './mvn package'
                           }
                       post{
                            always {
