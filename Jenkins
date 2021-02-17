@@ -43,5 +43,15 @@ pipeline{
       }
       
   }
+  
+  stage('sonar connection'){
+      steps{
+        echo 'sonar One'
+        sh 'mvn verify sonar:sonar'
+      }
+      
+  }
+  
+  
   }
 }
