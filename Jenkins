@@ -7,12 +7,7 @@ pipeline{
   }
 
   stages {
-  
-     stage('deploy to artifactory')
-     {
-     
-     stages {
-          stage("build & SonarQube analysis") {
+  stage("build & SonarQube analysis") {
             agent any
             steps {
               withSonarQubeEnv('simple') {
@@ -22,6 +17,10 @@ pipeline{
             }
           }
     }
+  
+     stage('deploy to artifactory')
+     {
+     
      steps{
      
      rtUpload (
