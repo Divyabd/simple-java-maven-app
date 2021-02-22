@@ -8,13 +8,13 @@
   <name>my-app</name>
   <url>http://maven.apache.org</url>
 
-   <properties>
+<!--    <properties>
      <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   <sonar.projectKey>sample-java-maven-app</sonar.projectKey>
   <sonar.organization>Administrator</sonar.organization>
   <sonar.host.url>https://10.0.0.1:9000/</sonar.host.url>
-</properties>
+</properties> -->
   
   <dependencies>
     
