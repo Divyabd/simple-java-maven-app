@@ -7,15 +7,7 @@ pipeline{
   }
 
   stages {
-  stage("build & SonarQube analysis") {
-            agent any
-            steps {
-              withSonarQubeEnv('sample') {
-                sh 'java -version'
-                sh 'mvn clean package sonar:sonar'
-              }
-            }
-          }
+  
     
   
      stage('deploy to artifactory')
