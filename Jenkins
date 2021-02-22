@@ -9,7 +9,7 @@ pipeline{
   stages {
    stage('collect artifact'){
      steps{
-    // archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+    archiveArtifacts artifacts: 'target', followSymlinks: false
      }
      }
      stage('deploy to artifactory')
