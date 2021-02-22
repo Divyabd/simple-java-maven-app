@@ -9,9 +9,9 @@
   <url>http://maven.apache.org</url>
 
    <properties>
-  <sonar.projectKey>Divyabd_simple-java-maven-app</sonar.projectKey>
-  <sonar.organization>divyabd</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.projectKey>sample-java-maven-app</sonar.projectKey>
+  <sonar.organization>Administrator</sonar.organization>
+  <sonar.host.url>https://10.0.0.1:9000/</sonar.host.url>
 </properties>
   
   <dependencies>
